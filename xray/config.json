@@ -1,0 +1,19 @@
+{
+  "log": { "loglevel": "warning" },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10001,
+      "protocol": "vless",
+      "settings": {
+        "clients": [ { "id": "__UUID__", "flow": "" } ],
+        "decryption": "none"
+      },
+      "streamSettings": {
+        "network": "ws",
+        "wsSettings": { "path": "/ws" }
+      }
+    }
+  ],
+  "outbounds": [ { "protocol": "freedom" } ]
+}
